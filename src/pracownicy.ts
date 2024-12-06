@@ -21,10 +21,10 @@ export const dodajPracownika = (pracownik) => {
     listaPracowników.push(pracownik);
 }
 
-export const zwolnijPracownika = (id, powód) => {
+export const zwolnijPracownika = (id, powody) => {
     const pracownik = listaPracowników/* ?? */.find(pracownik => pracownik.id === id);
     if (pracownik) {
-            pracownik.zwolnij(powód);
+            pracownik.zwolnij(powody);
     }
 }
 
